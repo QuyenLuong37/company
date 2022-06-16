@@ -1,13 +1,352 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="plugins/jquery.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-  <div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="plugins/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        font-size: 18px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /* padding: 40px 60px; */
+      }
+
+      .parallax-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .swiper-slide .title {
+        font-size: 41px;
+        font-weight: 300;
+      }
+
+      .swiper-slide .subtitle {
+        font-size: 21px;
+      }
+
+      .swiper-slide .text {
+        font-size: 14px;
+        max-width: 400px;
+        line-height: 1.3;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Nav -->
+      <div>
+        <img src="./img/header.png" alt="" />
+        <div class="bg-[#164398] border-b-[3px] border-[#ed1b24]">
+          <div class="container mx-auto">
+            <ul class="flex justify-between items-center text-white">
+              <li>
+                <a
+                  href="#"
+                  class="block uppercase font-semibold text-white py-2 px-6 text-white bg-[#ed1b24]"
+                  aria-current="page"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                  >Tin tức</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                  >Công nhân 360</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                  >Đa phương tiện</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                  >Hướng dẫn nghiệp vụ</a
+                >
+              </li>
+
+              <li>
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="w-full" src="https://picsum.photos/1280/400" alt="" />
+          </div>
+          <!-- <div class="swiper-slide">
+          <img class="w-full" src="https://picsum.photos/1280/400" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img class="w-full" src="https://picsum.photos/1280/400" alt="">
+        </div> -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Body -->
+      <div class="container mx-auto mt-9">
+        <div class="grid grid-cols-[1fr,_minmax(250px,_300px)] gap-5">
+          <!-- Left -->
+          <div>
+            <div class="grid grid-cols-[1fr,_minmax(250px,_300px)] gap-5">
+              <!-- Sub-left-1 -->
+              <div class="space-y-1">
+                <img
+                  src="./img/anh-1.png"
+                  class="w-full h-[350px] object-cover rounded"
+                  alt=""
+                />
+                <div class="font-bold text-xl">
+                  PC Phú Thọ phát động đẩy mạnh phong trào xây dựng Văn hóa an
+                  toàn lao động 2022
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum neque voluptate aliquam nostrum beatae, fuga dolorum
+                  accusamus esse earum alias?.
+                </p>
+              </div>
+
+              <!-- Sub-right-2 -->
+              <div class="space-y-2.5">
+                <ul
+                  class="w-full text-sm font-semibold bg-red-500 rounded-tl-lg rounded-tr-lg"
+                >
+                  <li
+                    class="w-full px-4 py-2 border-b border-gray-200  text-white uppercase"
+                  >
+                    Tin nổi bật
+                  </li>
+                </ul>
+                <div
+                  class="flex space-x-3 items-center pb-2.5 border-b-2 border-dotted"
+                >
+                  <img
+                    class="rounded h-16"
+                    src="./img/anh-tin-noi-bat.png"
+                    alt=""
+                  />
+                  <div class="text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <div class="grid grid-cols-2 gap-5">
+                <img
+                  src="./img/tam-guonh-tieu-bieu.png"
+                  class="w-full"
+                  alt=""
+                />
+                <img
+                  src="./img/tam-guonh-tieu-bieu.png"
+                  class="w-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right -->
+          <div class="space-y-2">
+            <ul
+              class="w-full text-sm font-semibold bg-[#f7f7f9] border border-gray-200 rounded-lg"
+            >
+              <li
+                class="w-full px-4 py-2 rounded-t-lg bg-[#164398] text-white uppercase"
+              >
+                Thông báo
+              </li>
+              <li
+                class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+              >
+                Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+              </li>
+              <li
+                class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+              >
+                Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+              </li>
+              <li
+                class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+              >
+                Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+              </li>
+              <li
+                class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+              >
+                Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+              </li>
+              <li
+                class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+              >
+                Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+              </li>
+              <li
+                class="w-full px-4 py-2 border-b border-gray-200 dark:border-gray-600"
+              >
+                Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+              </li>
+            </ul>
+
+            <div>
+              <img class="w-full" src="./img/tap-doan-dien-luc.png" alt="" />
+            </div>
+            <div>
+              <img class="w-full" src="./img/youtube.png" alt="" />
+            </div>
+            <div>
+              <img class="w-full" src="./img/ban-tin-cong-doan.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mutimedia -->
+      <div class="mt-9 bg-gradient-to-r from-[#164398] to-[#1d58c7]">
+        <div class="container mx-auto py-12">
+          <div class="font-bold upppercase mb-6 text-4xl text-center text-white">Multimedia</div>
+          <div class="grid grid-cols-4 gap-8">
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+      <!-- Tin tuc -->
+      <div class="container mx-auto mt-12">
+        
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>

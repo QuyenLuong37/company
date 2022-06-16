@@ -3,60 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="plugins/jquery.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   </head>
   <body>
     <div>
-      <img src="./img/header.png" alt="">
-      <div class="bg-white px-2 py-2.5 rounded ">
-        <div
-          class="container flex justify-center mx-auto"
-        >
-          <div class="" id="mobile-menu">
-            <ul
-              class="flex justify-around mt-4 "
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase  py-2 px-6 text-white bg-blue-700"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase  py-2 px-6 text-gray-700 hover:bg-gray-50 "
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase  py-2 px-6 text-gray-700 hover:bg-gray-50"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase  py-2 px-6 text-gray-700 hover:bg-gray-50"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase  py-2 px-6 text-gray-700 hover:bg-gray-50"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+      <div>
+        <img src="./img/header.png" alt="">
+        <div class="bg-[#164398] border-b-[3px] border-[#ed1b24]">
+          <div
+            class="container mx-auto"
+          >
+          <ul
+            class="flex justify-between  items-center text-white"
+          >
+            <li>
+              <a
+                href="#"
+                class="block uppercase font-semibold text-white py-2 px-6 text-white bg-[#ed1b24]"
+                aria-current="page"
+                >Trang chủ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50 "
+                >Giới thiệu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                >Tin tức</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                >Công nhân 360</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                >Đa phương tiện</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block uppercase font-semibold text-white py-2 px-6 hover:bg-gray-50"
+                >Hướng dẫn nghiệp vụ</a
+              >
+            </li>
+    
+            <li>
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </li>
+          </ul>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Mutimedia -->
+      <div class="mt-9 bg-gradient-to-r from-[#164398] to-[#1d58c7]">
+        <div class="container mx-auto py-12">
+          <div class="font-bold upppercase mb-6 text-4xl text-center text-white">Multimedia</div>
+          <div class="grid grid-cols-4 gap-8">
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="font-semibold pb-1 mb-4 border-b-[3px] border-gray-400 text-lg text-white">VIDEO</div>
+              <div class="bg-white rounded shadow">
+                <div>
+                  <img src="./img/anh-media-1.png" class="w-full rounded-tl rounded-tr" alt="">
+                </div>
+                <div class="p-3">
+                  <div class="font-semibold text-sm mb-6">Mô hình tổ tư vấn Covid 19 EVN có gì đặc biệt</div>
+                  <div class="text-center">
+                    <button type="button" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 ">Xem thêm</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container mx-auto mt-12">
+          
+        </div>
+      </div>
+    
   </body>
 </html>
