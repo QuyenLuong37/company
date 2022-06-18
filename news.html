@@ -32,14 +32,13 @@
         <div class="bg-[#164398] border-b-[3px] border-[#ed1b24]">
           <div class="container mx-auto">
             <ul class="flex justify-between items-center text-white">
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 text-white bg-[#ed1b24]"
-                  aria-current="page"
-                  >Trang chủ</a
-                >
-              </li>
+               <li>
+                 <a
+                   href="#"
+                   class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                   >Trang chủ</a
+                 >
+               </li>
               <li>
                 <a
                   href="#"
@@ -47,13 +46,15 @@
                   >Giới thiệu</a
                 >
               </li>
+
               <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Tin tức</a
-                >
-              </li>
+               <a
+                 href="#"
+                 class="block uppercase font-semibold text-white py-2 px-6 text-white bg-[#ed1b24]"
+                 aria-current="page"
+                 >Tin tức</a
+               >
+             </li>
               <li>
                 <a
                   href="#"
@@ -86,38 +87,259 @@
 
       <!-- Breadcrumb -->
       <div class="bg-[#f8f8f8]">
-        <div class="container mx-auto py-2">
-          <ol
-            class="flex items-center whitespace-nowrap min-w-0"
-            aria-label="Breadcrumb"
-          >
-            <li class="">
-              <a
-                class="flex items-center text-gray-500 hover:text-blue-600"
-                href="#"
-              >
-                <i class="fa-solid fa-house mr-2"></i>
-                Trang chủ
-                <i class="fa-solid fa-angle-right mx-3"></i>
-              </a>
-            </li>
-            <li
-              class="font-semibold text-gray-800 truncate dark:text-gray-200"
-              aria-current="page"
-            >
-              Giới thiệu
-            </li>
-          </ol>
-        </div>
-      </div>
+         <div class="container mx-auto py-2">
+           <ol
+             class="flex items-center whitespace-nowrap min-w-0"
+             aria-label="Breadcrumb"
+           >
+             <li class="">
+               <a
+                 class="flex items-center text-gray-500 hover:text-blue-600"
+                 href="#"
+               >
+                 <i class="fa-solid fa-house mr-2"></i>
+                 Trang chủ
+                 <i class="fa-solid fa-angle-right mx-3"></i>
+               </a>
+             </li>
+             <li
+               class="font-semibold text-gray-800 truncate dark:text-gray-200"
+               aria-current="page"
+             >
+               Tin tức
+             </li>
+           </ol>
+         </div>
+       </div>
+
       <!-- Main -->
       <div class="container mx-auto my-8">
         <div class="grid grid-cols-[1fr,_minmax(250px,_300px)] gap-5">
           <!-- left -->
-          <div>
-            <div class="text-[#164398] uppercase font-bold text-xl mb-3">
-              Giới thiệu
+          <div class="divide-y">
+            <div class="pb-5">
+               <div class="text-red-500 uppercase font-bold text-xl mb-3">
+                 Tin tức nổi bật
+               </div>
+   
+               <div>
+                  <div class="grid grid-cols-3 gap-10">
+                     <div class="space-y-3">
+                        <img
+                          src="./img/anh-1.png"
+                          class="w-full h-[250px] object-cover rounded"
+                          alt=""
+                        />
+                        <div class="font-bold text-lg">
+                          PC Phú Thọ phát động đẩy mạnh phong trào xây dựng Văn hóa an
+                          toàn lao động 2022
+                        </div>
+                        <div>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Rerum neque voluptate aliquam nostrum beatae, fuga dolorum
+                          accusamus esse earum alias?.
+                        </div>
+                      </div>
+                     <div class="space-y-3">
+                        <img
+                          src="./img/anh-1.png"
+                          class="w-full h-[250px] object-cover rounded"
+                          alt=""
+                        />
+                        <div class="font-bold text-lg">
+                          PC Phú Thọ phát động đẩy mạnh phong trào xây dựng Văn hóa an
+                          toàn lao động 2022
+                        </div>
+                        <div>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                          Rerum neque voluptate aliquam nostrum beatae, fuga dolorum
+                          accusamus esse earum alias?.
+                        </div>
+                      </div>
+                  </div>
+               </div>
             </div>
+
+            <div class="py-5">
+               <div class="flex items-center justify-between ">
+                  <div class="text-[#164398] uppercase font-bold text-xl mb-3">
+                    Công đoàn điện lực việt nam
+                  </div>
+                  <div class="flex items-center space-x-2 cursor-pointer">
+                    <div class="text-sm">Xem thêm</div>
+                    <i class="fa-solid fa-angle-right text-sm"></i>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5">
+                  <!-- Sub-left-1 -->
+                  <div class="space-y-1">
+                    <img
+                      src="./img/anh-1.png"
+                      class="w-full h-[350px] object-cover rounded"
+                      alt=""
+                    />
+                    <div class="font-bold text-lg">
+                      PC Phú Thọ phát động đẩy mạnh phong trào xây dựng Văn hóa an
+                      toàn lao động 2022
+                    </div>
+                    <div>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum neque voluptate aliquam nostrum beatae, fuga dolorum
+                      accusamus esse earum alias?.
+                    </div>
+                  </div>
+    
+                  <!-- Sub-right-2 -->
+                  <div>
+                    <div
+                      class="flex space-x-3 pb-3 border-b border-solid"
+                    >
+                      <img
+                        class="rounded h-20 w-32 object-cover"
+                        src="./img/anh-tin-noi-bat.png"
+                        alt=""
+                      />
+                      <div class="font-medium">
+                        ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                    </div>
+                    <div
+                      class="flex space-x-3 py-3 border-b border-solid"
+                    >
+                      <img
+                        class="rounded h-20 w-32 object-cover"
+                        src="./img/anh-tin-noi-bat.png"
+                        alt=""
+                      />
+                      <div class="font-medium">
+                        ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="py-5">
+               <div class="flex items-center justify-between ">
+                  <div class="text-[#164398] uppercase font-bold text-xl mb-3">
+                    Công đoàn TDoan Cơ sở
+                  </div>
+                  <div class="flex items-center space-x-2 cursor-pointer">
+                    <div class="text-sm">Xem thêm</div>
+                    <i class="fa-solid fa-angle-right text-sm"></i>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5">
+                  <!-- Sub-left-1 -->
+                  <div class="space-y-1">
+                    <img
+                      src="./img/anh-1.png"
+                      class="w-full h-[350px] object-cover rounded"
+                      alt=""
+                    />
+                    <div class="font-bold text-lg">
+                      PC Phú Thọ phát động đẩy mạnh phong trào xây dựng Văn hóa an
+                      toàn lao động 2022
+                    </div>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum neque voluptate aliquam nostrum beatae, fuga dolorum
+                      accusamus esse earum alias?.
+                    </p>
+                  </div>
+    
+                  <!-- Sub-right-2 -->
+                  <div>
+                    <div
+                      class="flex space-x-3 pb-3 border-b border-solid"
+                    >
+                      <img
+                        class="rounded h-20 w-32 object-cover"
+                        src="./img/anh-tin-noi-bat.png"
+                        alt=""
+                      />
+                      <div class="font-medium">
+                        ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                    </div>
+                    <div
+                      class="flex space-x-3 py-3 border-b border-solid"
+                    >
+                      <img
+                        class="rounded h-20 w-32 object-cover"
+                        src="./img/anh-tin-noi-bat.png"
+                        alt=""
+                      />
+                      <div class="font-medium">
+                        ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="py-5">
+               <div class="flex items-center justify-between ">
+                  <div class="text-[#164398] uppercase font-bold text-xl mb-3">
+                    Tin ngành điện
+                  </div>
+                  <div class="flex items-center space-x-2 cursor-pointer">
+                    <div class="text-sm">Xem thêm</div>
+                    <i class="fa-solid fa-angle-right text-sm"></i>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-5">
+                  <!-- Sub-left-1 -->
+                  <div class="space-y-1">
+                    <img
+                      src="./img/anh-1.png"
+                      class="w-full h-[350px] object-cover rounded"
+                      alt=""
+                    />
+                    <div class="font-bold text-lg">
+                      PC Phú Thọ phát động đẩy mạnh phong trào xây dựng Văn hóa an
+                      toàn lao động 2022
+                    </div>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum neque voluptate aliquam nostrum beatae, fuga dolorum
+                      accusamus esse earum alias?.
+                    </p>
+                  </div>
+    
+                  <!-- Sub-right-2 -->
+                  <div>
+                    <div
+                      class="flex space-x-3 pb-3 border-b border-solid"
+                    >
+                      <img
+                        class="rounded h-20 w-32 object-cover"
+                        src="./img/anh-tin-noi-bat.png"
+                        alt=""
+                      />
+                      <div class="font-medium">
+                        ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                    </div>
+                    <div
+                      class="flex space-x-3 py-3 border-b border-solid"
+                    >
+                      <img
+                        class="rounded h-20 w-32 object-cover"
+                        src="./img/anh-tin-noi-bat.png"
+                        alt=""
+                      />
+                      <div class="font-medium">
+                        ipsum dolor sit amet consectetur adipisicing elit ipsum dolor sit amet consectetur adipisicing elit.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
           </div>
 
           <!-- Right -->
@@ -127,14 +349,14 @@
                 <li
                   class="w-full px-4 py-2 rounded-t-lg bg-red-500 text-white uppercase"
                 >
-                  Giới thiệu
+                  Tin tức
                 </li>
                 <li
                   class="w-full px-4 py-3 border-dashed border-b border-r-solid border-red-500 bg-[#fff3f3]"
                 >
                   <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-circle-notch text-red-500"></i>
-                    <div class="font-semibold">Chức năng nhiệm vụ</div>
+                    <div class="font-semibold text-red-500">Công đoàn Điện lực Việt nam</div>
                   </div>
                 </li>
                 <li class="w-full px-4 py-3 bg-[#fff3f3]">
