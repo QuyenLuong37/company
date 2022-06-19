@@ -23,6 +23,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/datepicker.js"></script>
   </head>
   <body>
     <div>
@@ -32,58 +33,57 @@
         <div class="bg-[#164398] border-b-[3px] border-[#ed1b24]">
           <div class="container mx-auto">
             <ul class="flex justify-between items-center text-white">
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Trang chủ</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Giới thiệu</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Tin tức</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Công nhân 360</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Đa phương tiện</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
-                  >Hướng dẫn nghiệp vụ</a
-                >
-              </li>
-
-              <li>
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </li>
-            </ul>
+                <li>
+                  <a
+                    href="#"
+                    class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                    >Giới thiệu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                    >Tin tức</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                    >Công nhân 360</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                    >Đa phương tiện</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                    >Hướng dẫn nghiệp vụ</a
+                  >
+                </li>
+  
+                <li>
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </li>
+              </ul>
           </div>
         </div>
       </div>
 
-      <!-- Breadcrumb -->
       <div class="bg-[#f8f8f8]">
         <div class="container mx-auto py-2">
           <ol
@@ -101,10 +101,10 @@
               </a>
             </li>
             <li
-              class="font-semibold text-gray-800 truncate "
+              class="font-semibold text-gray-800 truncate"
               aria-current="page"
             >
-              Giới thiệu
+              Chế độ CS người lao động
             </li>
           </ol>
         </div>
@@ -113,9 +113,238 @@
       <div class="container mx-auto my-8">
         <div class="grid grid-cols-[1fr,_minmax(250px,_300px)] gap-5">
           <!-- left -->
-          <div>
-            <div class="text-[#164398] uppercase font-bold text-xl mb-3">
-              Giới thiệu
+          <div class="space-y-6">
+            <div>
+              <div class="text-[#164398] uppercase font-bold text-xl mb-3">
+                Danh mục 1
+              </div>
+
+              <div>
+                <div class="flex space-x-2">
+                  <div class="grid grid-cols-5 gap-2">
+                    <input
+                      type="text"
+                      class="col-span-2 py-2 px-3 block w-full border border-gray-200 rounded-md outline-none"
+                      placeholder="Từ khóa"
+                    />
+
+                    <select
+                      class="py-2 px-3 block w-full border border-gray-200 rounded-md outline-none"
+                    >
+                      <option selected>Chọn danh mục</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+
+                    <div date-rangepicker class="flex items-center space-x-2">
+                      <div class="relative">
+                        <div
+                          class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                        >
+                          <svg
+                            class="w-5 h-5 text-gray-500"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          name="start"
+                          type="text"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full pl-10 p-2.5 outline-none"
+                          placeholder="Từ ngày"
+                        />
+                      </div>
+                    </div>
+                    <div date-rangepicker class="flex items-center space-x-2">
+                      <div class="relative">
+                        <div
+                          class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                        >
+                          <svg
+                            class="w-5 h-5 text-gray-500"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          name="start"
+                          type="text"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full pl-10 p-2.5 outline-none"
+                          placeholder="Đến ngày"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-[#164398] text-white transition-all"
+                  >
+                    Tìm
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex space-x-6 border-b border-dotted pb-6">
+                      <div>
+                        <img
+                          src="https://via.placeholder.com/420x270"
+                          class="rounded"
+                          alt=""
+                        />
+                      </div>
+  
+                      <div class="space-y-2">
+                        <div class="font-bold">
+                          Quyết định phê duyệt đề án áp dụng chuẩn mực báo cáo tài
+                          chính
+                        </div>
+                        <div
+                          class="flex items-center space-x-2 text-gray-500"
+                        >
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <span>22/12/2022</span>
+                        </div>
+  
+                        <div class="flex space-x-2 text-blue-600 items-center">
+                          <div>Tải về</div>
+                          <i class="fa-solid fa-download"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex space-x-6 border-b border-dotted pb-6">
+                      <div>
+                        <img
+                          src="https://via.placeholder.com/420x270"
+                          class="rounded"
+                          alt=""
+                        />
+                      </div>
+  
+                      <div class="space-y-2">
+                        <div class="font-bold">
+                          Quyết định phê duyệt đề án áp dụng chuẩn mực báo cáo tài
+                          chính
+                        </div>
+                        <div
+                          class="flex items-center space-x-2 text-gray-500"
+                        >
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <span>22/12/2022</span>
+                        </div>
+  
+                        <div class="flex space-x-2 text-blue-600 items-center">
+                          <div>Tải về</div>
+                          <i class="fa-solid fa-download"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex space-x-6 border-b border-dotted pb-6">
+                      <div>
+                        <img
+                          src="https://via.placeholder.com/420x270"
+                          class="rounded"
+                          alt=""
+                        />
+                      </div>
+  
+                      <div class="space-y-2">
+                        <div class="font-bold">
+                          Quyết định phê duyệt đề án áp dụng chuẩn mực báo cáo tài
+                          chính
+                        </div>
+                        <div
+                          class="flex items-center space-x-2 text-gray-500"
+                        >
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <span>22/12/2022</span>
+                        </div>
+  
+                        <div class="flex space-x-2 text-blue-600 items-center">
+                          <div>Tải về</div>
+                          <i class="fa-solid fa-download"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex space-x-6 border-b border-dotted pb-6">
+                      <div>
+                        <img
+                          src="https://via.placeholder.com/420x270"
+                          class="rounded"
+                          alt=""
+                        />
+                      </div>
+  
+                      <div class="space-y-2">
+                        <div class="font-bold">
+                          Quyết định phê duyệt đề án áp dụng chuẩn mực báo cáo tài
+                          chính
+                        </div>
+                        <div
+                          class="flex items-center space-x-2 text-gray-500"
+                        >
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <span>22/12/2022</span>
+                        </div>
+  
+                        <div class="flex space-x-2 text-blue-600 items-center">
+                          <div>Tải về</div>
+                          <i class="fa-solid fa-download"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="flex justify-center items-center space-x-2">
+              <a
+                class="text-gray-400 hover:text-blue-600 p-4 inline-flex items-center gap-2 rounded-md"
+                href="#"
+              >
+                <span aria-hidden="true">«</span>
+                <span>Đầu</span>
+              </a>
+              <a
+                class="w-10 h-10 bg-[#164398] text-white p-4 inline-flex items-center font-medium rounded-full"
+                href="#"
+                aria-current="page"
+                >1</a
+              >
+              <a
+                class="w-10 h-10 text-gray-500 hover:text-blue-600 p-4 inline-flex items-center font-medium rounded-full"
+                href="#"
+                >2</a
+              >
+              <a
+                class="w-10 h-10 text-gray-500 hover:text-blue-600 p-4 inline-flex items-center font-medium rounded-full"
+                href="#"
+                >3</a
+              >
+              <a
+                class="text-gray-500 hover:text-blue-600 p-4 inline-flex items-center gap-2 rounded-md"
+                href="#"
+              >
+                <span>Cuối</span>
+                <span aria-hidden="true">»</span>
+              </a>
             </div>
           </div>
 
@@ -126,20 +355,20 @@
                 <li
                   class="w-full px-4 py-2 rounded-t-lg bg-red-500 text-white uppercase"
                 >
-                  Giới thiệu
+                  Chế độ CS người lao động
                 </li>
                 <li
                   class="w-full px-4 py-3 border-dotted border-b border-r-solid border-red-300 bg-[#fff3f3]"
                 >
                   <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-circle-notch text-red-500"></i>
-                    <div class="font-semibold">Chức năng nhiệm vụ</div>
+                    <div class="font-semibold text-red-500">Danh mục 1</div>
                   </div>
                 </li>
                 <li class="w-full px-4 py-3 bg-[#fff3f3]">
                   <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-circle-notch text-red-500"></i>
-                    <div class="font-semibold">Chức năng nhiệm vụ</div>
+                    <div class="font-semibold">Danh mục 2</div>
                   </div>
                 </li>
               </ul>
@@ -215,7 +444,7 @@
               </div>
               <div class="flex flex-col bg-white border shadow-sm rounded-xl">
                 <img
-                  class="w-full h-auto rounded-t-xl"
+                  class="w-full rounded-t-xl"
                   src="https://via.placeholder.com/420x270"
                   alt="Image Description"
                 />
@@ -251,7 +480,7 @@
               </div>
               <div class="flex flex-col bg-white border shadow-sm rounded-xl">
                 <img
-                  class="w-full h-auto rounded-t-xl"
+                  class="w-full rounded-t-xl"
                   src="https://via.placeholder.com/420x270"
                   alt="Image Description"
                 />
@@ -289,7 +518,7 @@
               </div>
               <div class="flex flex-col bg-white border shadow-sm rounded-xl">
                 <img
-                  class="w-full h-auto rounded-t-xl"
+                  class="w-full rounded-t-xl"
                   src="https://via.placeholder.com/420x270"
                   alt="Image Description"
                 />
@@ -325,7 +554,7 @@
               </div>
               <div class="flex flex-col bg-white border shadow-sm rounded-xl">
                 <img
-                  class="w-full h-auto rounded-t-xl"
+                  class="w-full rounded-t-xl"
                   src="https://via.placeholder.com/420x270"
                   alt="Image Description"
                 />

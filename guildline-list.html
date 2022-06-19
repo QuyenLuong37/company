@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -70,7 +70,8 @@
               <li>
                 <a
                   href="#"
-                  class="block uppercase font-semibold text-white py-2 px-6 transition hover:bg-[#ed1b24]"
+                  class="block uppercase font-semibold text-white py-2 px-6 text-white bg-[#ed1b24]"
+                  aria-current="page"
                   >Hướng dẫn nghiệp vụ</a
                 >
               </li>
@@ -104,18 +105,113 @@
               class="font-semibold text-gray-800 truncate "
               aria-current="page"
             >
-              Giới thiệu
+              Hướng dẫn nghiệp vụ
             </li>
           </ol>
         </div>
       </div>
+
       <!-- Main -->
       <div class="container mx-auto my-8">
         <div class="grid grid-cols-[1fr,_minmax(250px,_300px)] gap-5">
-          <!-- left -->
+          <!-- Left -->
           <div>
-            <div class="text-[#164398] uppercase font-bold text-xl mb-3">
-              Giới thiệu
+            <div>
+              <div class="text-[#164398] uppercase font-bold text-xl mb-3">
+                Tổ chức
+              </div>
+              <div class="divide-y">
+                <div class="pb-6">
+                  <div class="grid grid-cols-[minmax(80px,_100px),_1fr] gap-6">
+                    <div>
+                      <img
+                        src="http://via.placeholder.com/100x100
+                                "
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <div class="text-lg font-bold">
+                        Tình hình hoạt động tháng 5 và mục tiêu
+                      </div>
+                      <div
+                        class="flex items-center space-x-3 text-gray-500 mt-2 text-sm"
+                      >
+                        <div class="flex items-center space-x-2">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <span>22/12/2022</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>10 lượt</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="py-6">
+                  <div class="grid grid-cols-[minmax(80px,_100px),_1fr] gap-6">
+                    <div>
+                      <img
+                        src="http://via.placeholder.com/100x100
+                                "
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <div class="text-lg font-bold">
+                        Tình hình hoạt động tháng 5 và mục tiêu
+                      </div>
+                      <div
+                        class="flex items-center space-x-3 text-gray-500 mt-2 text-sm"
+                      >
+                        <div class="flex items-center space-x-2">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <span>22/12/2022</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                          <i class="fa-solid fa-eye"></i>
+                          <span>10 lượt</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center space-x-2">
+              <a
+                class="text-gray-400 hover:text-blue-600 p-4 inline-flex items-center gap-2 rounded-md"
+                href="#"
+              >
+                <span aria-hidden="true">«</span>
+                <span>Đầu</span>
+              </a>
+              <a
+                class="w-10 h-10 bg-[#164398] text-white p-4 inline-flex items-center font-medium rounded-full"
+                href="#"
+                aria-current="page"
+                >1</a
+              >
+              <a
+                class="w-10 h-10 text-gray-500 hover:text-blue-600 p-4 inline-flex items-center font-medium rounded-full"
+                href="#"
+                >2</a
+              >
+              <a
+                class="w-10 h-10 text-gray-500 hover:text-blue-600 p-4 inline-flex items-center font-medium rounded-full"
+                href="#"
+                >3</a
+              >
+              <a
+                class="text-gray-500 hover:text-blue-600 p-4 inline-flex items-center gap-2 rounded-md"
+                href="#"
+              >
+                <span>Cuối</span>
+                <span aria-hidden="true">»</span>
+              </a>
             </div>
           </div>
 
@@ -126,67 +222,58 @@
                 <li
                   class="w-full px-4 py-2 rounded-t-lg bg-red-500 text-white uppercase"
                 >
-                  Giới thiệu
+                  Hướng dẫn nghiệp vụ
                 </li>
                 <li
                   class="w-full px-4 py-3 border-dotted border-b border-r-solid border-red-300 bg-[#fff3f3]"
                 >
                   <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-circle-notch text-red-500"></i>
-                    <div class="font-semibold">Chức năng nhiệm vụ</div>
+                    <div class="font-semibold text-red-500">Tổ chức</div>
                   </div>
                 </li>
                 <li class="w-full px-4 py-3 bg-[#fff3f3]">
                   <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-circle-notch text-red-500"></i>
-                    <div class="font-semibold">Chức năng nhiệm vụ</div>
+                    <div class="font-semibold">Chính sách pháp luật</div>
                   </div>
                 </li>
               </ul>
             </div>
-            <div class="space-y-2">
-              <ul class="w-full text-sm font-semibold bg-[#f7f7f9]">
+            <!-- tin noi bat -->
+            <div class="space-y-2.5">
+              <ul
+                class="w-full text-sm font-semibold bg-red-500 rounded-tl-lg rounded-tr-lg"
+              >
                 <li
                   class="w-full px-4 py-2 rounded-t-lg bg-[#164398] text-white uppercase"
                 >
-                  Thông báo
-                </li>
-                <li class="w-full px-4 py-2 border-b border-gray-200">
-                  Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
-                </li>
-                <li class="w-full px-4 py-2 border-b border-gray-200">
-                  Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
-                </li>
-                <li class="w-full px-4 py-2 border-b border-gray-200">
-                  Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
-                </li>
-                <li class="w-full px-4 py-2 border-b border-gray-200">
-                  Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
-                </li>
-                <li class="w-full px-4 py-2 border-b border-gray-200">
-                  Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
-                </li>
-                <li class="w-full px-4 py-2 border-b border-gray-200">
-                  Xét chọn giải thưởng Nguyễn Văn Linh lần thứ III, năm 2020
+                  Tin nổi bật
                 </li>
               </ul>
-
-              <div>
+              <div
+                class="flex space-x-3 items-center pb-2.5 border-b-2 border-dashed"
+              >
                 <img
-                  class="w-full rounded"
-                  src="./img/tap-doan-dien-luc.png"
+                  class="rounded w-full object-cover"
+                  src="https://via.placeholder.com/120x70"
                   alt=""
                 />
+                <div class="text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
               </div>
-              <div>
-                <img class="w-full rounded" src="./img/youtube.png" alt="" />
-              </div>
-              <div>
+              <div
+                class="flex space-x-3 items-center pb-2.5 border-b-2 border-dashed"
+              >
                 <img
-                  class="w-full rounded"
-                  src="./img/ban-tin-cong-doan.png"
+                  class="rounded w-full object-cover"
+                  src="https://via.placeholder.com/120x70"
                   alt=""
                 />
+                <div class="text-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
               </div>
             </div>
 
