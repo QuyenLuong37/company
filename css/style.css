@@ -1,3 +1,30 @@
-body, html {
-    font-family: 'Inter', sans-serif;
+@font-face {
+  font-family: "GoogleSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/GoogleSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GoogleSans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url(../fonts/GoogleSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "GoogleSans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url(../fonts/GoogleSans-Bold.ttf) format("truetype");
+  }
+
+
+body,
+html, * {
+  font-family: "GoogleSans", sans-serif;
+  font-size: 16px;
+  /* font-family: "Open Sans", sans-serif; */
 }
